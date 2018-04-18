@@ -1,0 +1,13 @@
+   -----------------------------------------------------
+   #   [_1_]  Generate Backdoor APK                    .
+
+   #   [_2_]  Generate Backdoor APK From Original APK  .
+
+   #   [_3_]  Launch msfconsole                        .
+
+   #   [_4_]  Help                                     .
+
+   #   [_5_]  Credits                                  .
+
+   #   [_6_]  Quit/Exit                                .
+   ----------------------------------------------------- 
