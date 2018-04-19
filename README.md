@@ -29,8 +29,8 @@ Done!
 # Contact
 
 Email: <a href="mailto: edvard1807@gmail.com">edvard1807@gmail.com</a>
-Github: <a target="blank" href="https://github.com/Buscedv">@buscedv</a>
-Instagram: <a target="blank" href="https://Instagram.com/Buscedv>@buscedv</a>
+Github: <a href="https://github.com/Buscedv">@buscedv</a>
+Instagram: <a href="https://Instagram.com/Buscedv>@buscedv</a>
 
 
 Edvard Busck-Nielsen 2018
