@@ -33,4 +33,4 @@ Github: <a href="https://github.com/Buscedv">@buscedv</a>
 Instagram: <a href="https://Instagram.com/Buscedv>@buscedv</a>
 
 
-Edvard Busck-Nielsen 2018
+Edvard Busck-Nielsen 2019
